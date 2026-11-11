@@ -58,6 +58,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
           className="aspect-[4/5] min-h-80 rounded-2xl lg:min-h-[28rem] lg:aspect-auto"
           sizes="(max-width: 1024px) 100vw, 50vw"
           priority
+          grayscale={!product.preserveColor}
+          imageClassName={product.preserveColor ? "object-top" : undefined}
         />
         <div>
           <p className="text-muted-foreground text-sm">

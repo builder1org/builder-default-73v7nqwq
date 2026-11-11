@@ -36,6 +36,8 @@ export function ProductCard({ product, className, featured }: ProductCardProps) 
               ? "(max-width: 1024px) 100vw, 560px"
               : "(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 280px"
           }
+          grayscale={!product.preserveColor}
+          imageClassName={product.preserveColor ? "object-top" : undefined}
         />
         {product.tag ? (
           <span className="pointer-events-none absolute top-3 start-3 z-10 rounded-full bg-background/90 px-2.5 py-0.5 text-xs font-medium backdrop-blur">

@@ -8,6 +8,8 @@ export type Product = {
   description: string;
   sizes: string[];
   imageAlt: string;
+  /** When true, product photo keeps original color (no grayscale filter). */
+  preserveColor?: boolean;
   tag?: string;
 };
 
@@ -23,6 +25,19 @@ export function productImageSrc(slug: string): string {
 }
 
 export const products: Product[] = [
+  {
+    slug: "angels-guard-hoodie",
+    name: "هودی Angels Guard Our Hearts",
+    category: "new",
+    priceLabel: "[قیمت محصول]",
+    description:
+      "هودی مشکی سنگین با چاپ پشت‌کار: قلب آناتومیک، فرشته‌ها و تایپوگرافی Angels Guard Our Hearts؛ صلیب تزئینی روی آستین. استایل استریت‌ور مونوکروم با جزئیات قرمز.",
+    sizes: ["S", "M", "L", "XL"],
+    imageAlt:
+      "هودی مشکی با گرافیک پشت‌کار Angels Guard Our Hearts، قلب قرمز و فرشته‌ها",
+    preserveColor: true,
+    tag: "جدید",
+  },
   {
     slug: "mantu-linen-cream",
     name: "مانتو کتان کرم",

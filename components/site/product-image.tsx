@@ -10,6 +10,7 @@ type ProductImageProps = {
   imageClassName?: string;
   priority?: boolean;
   sizes?: string;
+  grayscale?: boolean;
 };
 
 export function ProductImage({
@@ -19,6 +20,7 @@ export function ProductImage({
   imageClassName,
   priority,
   sizes = "(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 280px",
+  grayscale = true,
 }: ProductImageProps) {
   return (
     <div className={cn("relative overflow-hidden bg-muted", className)}>
@@ -29,7 +31,8 @@ export function ProductImage({
         sizes={sizes}
         priority={priority}
         className={cn(
-          "object-cover object-center grayscale transition-transform duration-300 group-hover:scale-[1.03]",
+          "object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]",
+          grayscale && "grayscale",
           imageClassName
         )}
       />

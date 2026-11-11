@@ -52,8 +52,9 @@
 
 ## ۸. تصاویر
 
-- محصولات: فایل‌های JPG در `public/images/products/{slug}.jpg` (نمونه استوک؛ با عکس واقعی مشتری جایگزین شود)
-- نمایش با `next/image` در `ProductImage`؛ فیلتر `grayscale` برای هماهنگی مونوکروم
+- محصولات: فایل‌های JPG در `public/images/products/{slug}.jpg`
+- محصول مرجع مشتری: `angels-guard-hoodie.jpg` (هودی Angels Guard Our Hearts) — `preserveColor: true` بدون grayscale
+- سایر محصولات: نمونه استوک با فیلتر grayscale در `ProductImage`
 - `imageAlt` در `lib/products.ts` برای هر محصول
 
 ## ۹. تعامل
