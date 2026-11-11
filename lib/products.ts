@@ -7,7 +7,7 @@ export type Product = {
   priceLabel: string;
   description: string;
   sizes: string[];
-  accent: string;
+  imageAlt: string;
   tag?: string;
 };
 
@@ -18,6 +18,10 @@ export const categoryLabels: Record<ProductCategory, string> = {
   new: "تازه‌ها",
 };
 
+export function productImageSrc(slug: string): string {
+  return `/images/products/${slug}.jpg`;
+}
+
 export const products: Product[] = [
   {
     slug: "mantu-linen-cream",
@@ -27,7 +31,7 @@ export const products: Product[] = [
     description:
       "مانتو آزاد دوخته‌شده از پارچه کتان تنفس‌پذیر؛ مناسب روزهای گرم و استایل مینیمال.",
     sizes: ["S", "M", "L", "XL"],
-    accent: "from-zinc-200 via-neutral-100 to-zinc-300",
+    imageAlt: "مانتو کتان کرم روی مدل در استودیو",
     tag: "پرفروش",
   },
   {
@@ -37,7 +41,7 @@ export const products: Product[] = [
     priceLabel: "۵٬۹۰۰٬۰۰۰ تومان",
     description: "پالتو بلند با آستر نرم؛ برش کلاسیک برای پاییز و زمستان.",
     sizes: ["S", "M", "L"],
-    accent: "from-zinc-700 via-zinc-600 to-zinc-800",
+    imageAlt: "پالتو پشمی بلند به رنگ زغالی",
     tag: "کلکشن پاییز",
   },
   {
@@ -47,7 +51,7 @@ export const products: Product[] = [
     priceLabel: "۱٬۸۵۰٬۰۰۰ تومان",
     description: "حریر مصنوعی درخشان با یقه هالتر؛ ترکیب با شلوار رسمی یا دامن.",
     sizes: ["S", "M", "L"],
-    accent: "from-neutral-300 via-zinc-200 to-neutral-400",
+    imageAlt: "بلوز زنانه با بافت نرم",
   },
   {
     slug: "mens-oxford-shirt",
@@ -56,7 +60,7 @@ export const products: Product[] = [
     priceLabel: "۱٬۲۹۰٬۰۰۰ تومان",
     description: "پارچه اکسفورد بادوام؛ مناسب محیط کار و استایل کژوال.",
     sizes: ["M", "L", "XL", "XXL"],
-    accent: "from-zinc-100 via-neutral-50 to-zinc-200",
+    imageAlt: "پیراهن مردانه آکسفورد روی میز یا مدل",
   },
   {
     slug: "mens-tailored-trousers",
@@ -65,7 +69,7 @@ export const products: Product[] = [
     priceLabel: "۱٬۶۵۰٬۰۰۰ تومان",
     description: "برش اسلیم با چروک تمیز؛ رنگ خاکستری خنثی برای هر کمد.",
     sizes: ["30", "32", "34", "36"],
-    accent: "from-neutral-400 via-neutral-300 to-neutral-500",
+    imageAlt: "شلوار فاستونی مردانه با برش دقیق",
   },
   {
     slug: "leather-crossbody",
@@ -74,7 +78,7 @@ export const products: Product[] = [
     priceLabel: "۲٬۱۰۰٬۰۰۰ تومان",
     description: "چرم مصنوعی باکیفیت با بند قابل تنظیم و جیب داخلی زیپ‌دار.",
     sizes: ["یک سایز"],
-    accent: "from-zinc-700 via-zinc-800 to-black",
+    imageAlt: "کیف دوشی چرم کوچک",
     tag: "جدید",
   },
   {
@@ -84,7 +88,7 @@ export const products: Product[] = [
     priceLabel: "۶۸۰٬۰۰۰ تومان",
     description: "بافت نرم؛ ترکیب رنگ‌های خنثی برای لایه‌بندی پاییزی.",
     sizes: ["یک سایز"],
-    accent: "from-stone-200 via-zinc-100 to-stone-300",
+    imageAlt: "شال بافتنی یا پشمی تا‌شده",
   },
   {
     slug: "midi-dress-sage",
@@ -93,7 +97,7 @@ export const products: Product[] = [
     priceLabel: "۳٬۲۰۰٬۰۰۰ تومان",
     description: "برش A-line با کمربند پارچه‌ای؛ مناسب مهمانی و روزمره شیک.",
     sizes: ["S", "M", "L"],
-    accent: "from-neutral-200 via-zinc-50 to-neutral-300",
+    imageAlt: "پیراهن میدی زنانه",
     tag: "تازه",
   },
 ];

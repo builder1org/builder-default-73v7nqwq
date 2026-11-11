@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 
+import { ProductImage } from "@/components/site/product-image";
 import { Button } from "@/components/ui/button";
 import {
   getProductBySlug,
@@ -51,10 +52,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
         بازگشت به فروشگاه
       </Link>
       <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-14">
-        <div
-          className={`min-h-80 rounded-2xl bg-linear-to-br ${product.accent} lg:min-h-[28rem]`}
-          role="img"
-          aria-label={product.name}
+        <ProductImage
+          slug={product.slug}
+          alt={product.imageAlt}
+          className="aspect-[4/5] min-h-80 rounded-2xl lg:min-h-[28rem] lg:aspect-auto"
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          priority
         />
         <div>
           <p className="text-muted-foreground text-sm">
