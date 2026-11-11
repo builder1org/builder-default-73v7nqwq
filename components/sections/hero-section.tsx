@@ -31,9 +31,9 @@ export function HeroSection() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-3 lg:col-span-7 lg:gap-4">
-          <div className="col-span-2 row-span-2 min-h-52 rounded-2xl bg-linear-to-br from-stone-300 via-amber-100 to-orange-200 sm:min-h-72" />
-          <div className="min-h-28 rounded-2xl bg-linear-to-br from-zinc-600 to-zinc-800" />
-          <div className="min-h-28 rounded-2xl bg-linear-to-br from-orange-100 to-rose-200" />
+          <div className="col-span-2 row-span-2 min-h-52 rounded-2xl bg-linear-to-br from-zinc-200 via-neutral-100 to-zinc-300 sm:min-h-72" />
+          <div className="min-h-28 rounded-2xl bg-linear-to-br from-zinc-800 to-black" />
+          <div className="min-h-28 rounded-2xl bg-linear-to-br from-neutral-200 to-zinc-100" />
         </div>
       </div>
     </section>

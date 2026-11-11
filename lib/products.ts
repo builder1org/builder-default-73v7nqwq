@@ -27,7 +27,7 @@ export const products: Product[] = [
     description:
       "مانتو آزاد دوخته‌شده از پارچه کتان تنفس‌پذیر؛ مناسب روزهای گرم و استایل مینیمال.",
     sizes: ["S", "M", "L", "XL"],
-    accent: "from-stone-200 via-amber-50 to-stone-300",
+    accent: "from-zinc-200 via-neutral-100 to-zinc-300",
     tag: "پرفروش",
   },
   {
@@ -47,7 +47,7 @@ export const products: Product[] = [
     priceLabel: "۱٬۸۵۰٬۰۰۰ تومان",
     description: "حریر مصنوعی درخشان با یقه هالتر؛ ترکیب با شلوار رسمی یا دامن.",
     sizes: ["S", "M", "L"],
-    accent: "from-orange-200 via-rose-100 to-orange-300",
+    accent: "from-neutral-300 via-zinc-200 to-neutral-400",
   },
   {
     slug: "mens-oxford-shirt",
@@ -56,7 +56,7 @@ export const products: Product[] = [
     priceLabel: "۱٬۲۹۰٬۰۰۰ تومان",
     description: "پارچه اکسفورد بادوام؛ مناسب محیط کار و استایل کژوال.",
     sizes: ["M", "L", "XL", "XXL"],
-    accent: "from-sky-100 via-slate-100 to-sky-200",
+    accent: "from-zinc-100 via-neutral-50 to-zinc-200",
   },
   {
     slug: "mens-tailored-trousers",
@@ -74,7 +74,7 @@ export const products: Product[] = [
     priceLabel: "۲٬۱۰۰٬۰۰۰ تومان",
     description: "چرم مصنوعی باکیفیت با بند قابل تنظیم و جیب داخلی زیپ‌دار.",
     sizes: ["یک سایز"],
-    accent: "from-amber-800 via-amber-700 to-amber-900",
+    accent: "from-zinc-700 via-zinc-800 to-black",
     tag: "جدید",
   },
   {
@@ -84,7 +84,7 @@ export const products: Product[] = [
     priceLabel: "۶۸۰٬۰۰۰ تومان",
     description: "بافت نرم؛ ترکیب رنگ‌های خنثی برای لایه‌بندی پاییزی.",
     sizes: ["یک سایز"],
-    accent: "from-red-200 via-stone-200 to-red-100",
+    accent: "from-stone-200 via-zinc-100 to-stone-300",
   },
   {
     slug: "midi-dress-sage",
@@ -93,7 +93,7 @@ export const products: Product[] = [
     priceLabel: "۳٬۲۰۰٬۰۰۰ تومان",
     description: "برش A-line با کمربند پارچه‌ای؛ مناسب مهمانی و روزمره شیک.",
     sizes: ["S", "M", "L"],
-    accent: "from-emerald-100 via-teal-50 to-emerald-200",
+    accent: "from-neutral-200 via-zinc-50 to-neutral-300",
     tag: "تازه",
   },
 ];

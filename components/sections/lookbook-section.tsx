@@ -11,15 +11,15 @@ export function LookbookSection() {
           aria-hidden
         />
         <div
-          className="absolute inset-0 bg-linear-to-br from-zinc-700 via-stone-500 to-orange-300 opacity-90"
+          className="absolute inset-0 bg-linear-to-br from-zinc-900 via-zinc-700 to-black"
           aria-hidden
         />
         <div className="relative max-w-md">
-          <p className="text-primary-foreground/80 text-sm">لوک‌بوک</p>
-          <h2 className="mt-2 text-3xl font-semibold text-primary-foreground sm:text-4xl">
+          <p className="text-zinc-300 text-sm">لوک‌بوک</p>
+          <h2 className="mt-2 text-3xl font-semibold text-white sm:text-4xl">
             لایه‌ها، بافت‌ها، نور طبیعی
           </h2>
-          <p className="mt-4 text-primary-foreground/90 text-sm leading-relaxed">
+          <p className="mt-4 text-zinc-200 text-sm leading-relaxed">
             ایده‌استایل برای ترکیب کتان، پشم و چرم در یک ست — بدون نیاز به
             کمد پر از قطعات دورریختنی.
           </p>

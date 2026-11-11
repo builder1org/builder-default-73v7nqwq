@@ -5,22 +5,22 @@ import { categoryLabels, type ProductCategory } from "@/lib/products";
 const categories: { key: ProductCategory; gradient: string; href: string }[] = [
   {
     key: "women",
-    gradient: "from-rose-100 via-stone-100 to-rose-200",
+    gradient: "from-zinc-300 via-zinc-100 to-neutral-200",
     href: "/shop?category=women",
   },
   {
     key: "men",
-    gradient: "from-slate-200 via-sky-50 to-slate-300",
+    gradient: "from-neutral-400 via-neutral-200 to-zinc-300",
     href: "/shop?category=men",
   },
   {
     key: "accessories",
-    gradient: "from-amber-100 via-orange-50 to-amber-200",
+    gradient: "from-stone-300 via-stone-100 to-zinc-200",
     href: "/shop?category=accessories",
   },
   {
     key: "new",
-    gradient: "from-emerald-100 via-teal-50 to-emerald-200",
+    gradient: "from-zinc-800 via-zinc-600 to-zinc-900",
     href: "/shop?category=new",
   },
 ];
