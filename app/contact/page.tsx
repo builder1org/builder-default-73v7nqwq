@@ -6,7 +6,7 @@ import { siteContact } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "تماس",
-  description: "تماس با مزون آوا برای سفارش و پشتیبانی.",
+  description: `تماس با ${siteContact.brandName} برای سفارش و پشتیبانی.`,
 };
 
 export default function ContactPage() {

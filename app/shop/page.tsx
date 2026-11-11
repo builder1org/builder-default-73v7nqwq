@@ -8,10 +8,11 @@ import {
   type ProductCategory,
   categoryLabels,
 } from "@/lib/products";
+import { siteContact } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "فروشگاه",
-  description: "تمام محصولات مزون آوا — فیلتر بر اساس دسته.",
+  description: `تمام محصولات ${siteContact.brandName} — فیلتر بر اساس دسته.`,
 };
 
 type ShopPageProps = {

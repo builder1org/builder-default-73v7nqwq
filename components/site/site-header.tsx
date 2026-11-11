@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Menu, ShoppingBag, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { siteContact } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -24,7 +25,7 @@ export function SiteHeader() {
           href="/"
           className="font-semibold tracking-tight text-foreground text-lg sm:text-xl"
         >
-          مزون آوا
+          {siteContact.brandName}
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="اصلی">
