@@ -1,16 +1,35 @@
 import type { Metadata } from "next";
+import { Vazirmatn } from "next/font/google";
+
+import { SiteFooter } from "@/components/site/site-footer";
+import { SiteHeader } from "@/components/site/site-header";
+import { siteContact } from "@/lib/site-config";
+
 import "./globals.css";
 
+const vazirmatn = Vazirmatn({
+  subsets: ["arabic"],
+  variable: "--font-vazirmatn",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Website",
-  description: "Customer website",
+  title: {
+    default: `${siteContact.brandName} | فروشگاه پوشاک`,
+    template: `%s | ${siteContact.brandName}`,
+  },
+  description:
+    "فروشگاه آنلاین پوشاک و اکسسوری — کلکشن زنانه، مردانه و تازه‌ها.",
 };
 
-/** Agent: set lang, dir, fonts (prefer next/font/local), and metadata from DESIGN.md. */
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" dir="ltr">
-      <body className="font-sans antialiased">{children}</body>
+    <html lang="fa" dir="rtl" className={vazirmatn.variable}>
+      <body className="font-sans min-h-dvh flex flex-col">
+        <SiteHeader />
+        <div className="flex-1">{children}</div>
+        <SiteFooter />
+      </body>
     </html>
   );
 }
